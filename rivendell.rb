@@ -5,21 +5,21 @@
 class Rivendell < Formula
   desc "Rivendell CLI for AI coding agents and developer integrations"
   homepage "https://rivendell.health"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.0/rivendell_0.2.0_darwin_amd64.tar.gz"
-      sha256 "5c5994501ba605a96a06e2cbeaafc1039aac5f7074d21fbf1d324209c3b04046"
+      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.1/rivendell_0.2.1_darwin_amd64.tar.gz"
+      sha256 "85cf39a13cea7eb9edc5ab20ac5dbc7aa239998c9743a16721cd363a2b597d75"
 
       define_method(:install) do
         bin.install "rivendell"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.0/rivendell_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e874dfaf2a2b8e3cfcb49fba8f5c658c5cc05200bb3b17a907235193d50f5e46"
+      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.1/rivendell_0.2.1_darwin_arm64.tar.gz"
+      sha256 "5e84271837105bf9faa51598ffd062065364e710008bcef9ebd4bae595954108"
 
       define_method(:install) do
         bin.install "rivendell"
@@ -29,15 +29,15 @@ class Rivendell < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.0/rivendell_0.2.0_linux_amd64.tar.gz"
-      sha256 "cce2821ae948b55152b7fb3c5b030df715aec44c6d29f0ad2265c3777ba8f73a"
+      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.1/rivendell_0.2.1_linux_amd64.tar.gz"
+      sha256 "39b2a4bd495df0826a7472f136c46859852c3fa682749e96f915b499edafa23c"
       define_method(:install) do
         bin.install "rivendell"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.0/rivendell_0.2.0_linux_arm64.tar.gz"
-      sha256 "951337d56e463749cb6230a856d7be3a9ab015ae5d436bdae5bbb9d0d9475229"
+      url "https://github.com/rivendell-health/homebrew-cli/releases/download/v0.2.1/rivendell_0.2.1_linux_arm64.tar.gz"
+      sha256 "87727a42f66b77ab9c8293234a031aad32e0364ce01c57094c401d9822c66d4f"
       define_method(:install) do
         bin.install "rivendell"
       end
